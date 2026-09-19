@@ -25,3 +25,15 @@ GET {{TodoApiMinimal_HostAddress}}/todoitems/{{id}}
 GET {{TodoApiMinimal_HostAddress}}/todoitems/2
 
 ###
+
+
+PUT {{TodoApiMinimal_HostAddress}}/todoitems/{{id}}
+Content-Type: application/json
+
+{
+     "id": 1,
+    "name": "feed fish",
+    "isComplete": false
+}
+
+###
