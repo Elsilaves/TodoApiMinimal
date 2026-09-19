@@ -46,3 +46,7 @@ Content-Type: application/json
   }
 
 ###
+
+DELETE {{TodoApiMinimal_HostAddress}}/todoitems/1
+
+###
