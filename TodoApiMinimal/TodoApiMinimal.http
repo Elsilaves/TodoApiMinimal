@@ -9,3 +9,19 @@ Content-Type: application/json
 }
 
 ###
+GET {{TodoApiMinimal_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems/complete
+
+###
+
+@id=1
+GET {{TodoApiMinimal_HostAddress}}/todoitems/{{id}}
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems/2
+
+###
