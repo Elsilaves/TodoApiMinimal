@@ -1,6 +1,52 @@
-@TodoApiMinimal_HostAddress = http://localhost:5190
+@TodoApiMinimal_HostAddress = https://localhost:7032
 
-GET {{TodoApiMinimal_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{TodoApiMinimal_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+    "name":"walk dog",
+    "isComplete":true
+}
+
+###
+GET {{TodoApiMinimal_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems/complete
+
+###
+
+@id=1
+GET {{TodoApiMinimal_HostAddress}}/todoitems/{{id}}
+
+###
+
+GET {{TodoApiMinimal_HostAddress}}/todoitems/2
+
+###
+
+
+PUT {{TodoApiMinimal_HostAddress}}/todoitems/{{id}}
+Content-Type: application/json
+
+{
+     "id": 1,
+    "name": "feed fish",
+    "isComplete": false
+}
+
+###
+
+PATCH {{TodoApiMinimal_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+  {
+    "name": "run errands"
+  }
+
+###
+
+DELETE {{TodoApiMinimal_HostAddress}}/todoitems/1
 
 ###
