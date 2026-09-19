@@ -1,0 +1,6 @@
+@TodoApiMinimal_HostAddress = http://localhost:5190
+
+GET {{TodoApiMinimal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
